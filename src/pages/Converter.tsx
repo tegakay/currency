@@ -1,17 +1,18 @@
-import React from 'react'
-import { Footer } from '../components/Footer'
-import { NavBar } from '../components/NavBar'
-import {  Center } from "@chakra-ui/react";
+import React from "react";
+import { Footer } from "../components/Footer";
+import { NavBar } from "../components/NavBar";
+import { Center } from "@chakra-ui/react";
+import { ConvertLayout } from "../components/ConvertLayout";
 
 export const Converter = () => {
   return (
     <>
-    <NavBar/>
-    <Center>
+      <NavBar />
+      <Center>
+        <ConvertLayout />
         
-        <h1>Coming Soon</h1>
-        
-    </Center>
-    <Footer/></>
-  )
-}
+      </Center>
+      <Footer />
+    </>
+  );
+};
