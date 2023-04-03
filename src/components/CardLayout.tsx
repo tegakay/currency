@@ -14,6 +14,15 @@ interface cardProps {
   USD: string;
 }
 export const CardLayout = ({ EUR, GBP, USD }: cardProps) => {
+
+  const euro = 1/parseFloat(EUR)
+  let gbp :number |string = 1/parseFloat(GBP)
+  let usd :number |string = 1/parseFloat(USD)
+
+  gbp = gbp.toFixed(2)
+  usd = usd.toFixed(2)
+  
+  console.log("lonely",euro,gbp,usd)
   return (
     <Center>
       <Card align="center" maxW="sm" mt="40px" bg="tomato">
@@ -24,16 +33,16 @@ export const CardLayout = ({ EUR, GBP, USD }: cardProps) => {
         <CardBody>
           <Stat>
             <StatLabel>Naira to Euros</StatLabel>
-            <StatNumber>{EUR}</StatNumber>
+            <StatNumber>{euro}</StatNumber>
           </Stat>
 
           <Stat>
             <StatLabel>Naira to Pounds</StatLabel>
-            <StatNumber>{GBP}</StatNumber>
+            <StatNumber>{gbp}</StatNumber>
           </Stat>
           <Stat>
             <StatLabel>Naira to Dollars</StatLabel>
-            <StatNumber>{USD}</StatNumber>
+            <StatNumber>{usd}</StatNumber>
           </Stat>
         </CardBody>
       </Card>
