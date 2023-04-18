@@ -4,6 +4,7 @@ import { CardLayout as Card } from "../components/CardLayout";
 import { NavBar } from "../components/NavBar";
 import { Container } from "@chakra-ui/react";
 import { Footer } from "../components/Footer";
+import '../App.css'
 
 interface dataProps {
   EUR: string;
@@ -35,9 +36,9 @@ export const Main = () => {
   };
 
   return (
-    <>
+    <div className="bgui">
     <NavBar />
-    <Container>
+    <Container >
      
       {!data ? (
         <AlertLayout />
@@ -47,6 +48,6 @@ export const Main = () => {
       
     </Container>
     <Footer/>
-    </>
+    </div>
   );
 };

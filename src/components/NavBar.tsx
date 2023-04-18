@@ -3,6 +3,7 @@ import {
     Breadcrumb,
     BreadcrumbItem,
     BreadcrumbLink,
+    Link,
     
   } from '@chakra-ui/react'
 
@@ -19,7 +20,8 @@ export const NavBar = () => {
   </BreadcrumbItem>
 
   <BreadcrumbItem isCurrentPage>
-    <BreadcrumbLink href='/about'>Contact</BreadcrumbLink>
+    {/* <BreadcrumbLink href='https://github.com/tegakay/currency'>Github</BreadcrumbLink> */}
+    <Link href='https://github.com/tegakay/currency'>Github</Link>
   </BreadcrumbItem>
 </Breadcrumb>
   )

@@ -6,7 +6,6 @@ import {
   Input,
   Select,
   InputGroup,
-  InputLeftAddon,
 } from "@chakra-ui/react";
 import { ConvertView } from "./ConvertView";
 
@@ -72,14 +71,14 @@ console.log("before")
   }
 
   return (
-    <div>
-      <form>
-        <FormControl>
+    <div  >
+      <form >
+        <FormControl >
           <InputGroup>
-            <InputLeftAddon children="Type Amount" />
+            {/* <InputLeftAddon children="Type Amount" /> */}
             <Input
               type="number"
-              placeholder=""
+              placeholder="Enter Amount"
               name="number"
               onChange={handleChange}
             />
@@ -107,7 +106,7 @@ console.log("before")
             <option value="EUR">Euro</option>
           </Select>
         </FormControl>
-        <Button colorScheme="blue" onClick={handleClick}>
+        <Button mt={7} colorScheme="blue"  onClick={handleClick}>
           Convert
         </Button>
       </form>

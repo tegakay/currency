@@ -15,17 +15,17 @@ interface cardProps {
 }
 export const CardLayout = ({ EUR, GBP, USD }: cardProps) => {
 
-  const euro = 1/parseFloat(EUR)
+  let euro: number | string = 1/parseFloat(EUR)
   let gbp :number |string = 1/parseFloat(GBP)
   let usd :number |string = 1/parseFloat(USD)
 
   gbp = gbp.toFixed(2)
   usd = usd.toFixed(2)
+  euro = euro.toFixed(2)
   
-  console.log("lonely",euro,gbp,usd)
   return (
     <Center>
-      <Card align="center" maxW="sm" mt="40px" bg="tomato">
+      <Card align="center" maxW="sm" mt="40px" bg="#bc6c25">
         <CardHeader>
           <Heading size="md">Current Exchange Rate</Heading>
         </CardHeader>
