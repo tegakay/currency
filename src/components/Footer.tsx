@@ -1,4 +1,3 @@
-import React from "react";
 import { Icon, Link, Text, Center, Box } from "@chakra-ui/react";
 import { BsGithub, BsTwitter, BsLinkedin } from "react-icons/bs";
 
