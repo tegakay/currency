@@ -6,7 +6,7 @@ import { ConvertLayout } from "../components/ConvertLayout";
 
 export const Converter = () => {
   return (
-    <div className="bgui">
+    <div className="bguia">
       <NavBar />
       <Center>
         <ConvertLayout />

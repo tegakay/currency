@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <Center pt="20px">
      <footer>
-     <Text>Proudly made by Kofi</Text>
+     <Text> Made by Kofi</Text>
       <Box p='4' textAlign='center'>
         <Link mr='4' href="https://github.com/tegakay" isExternal>
           <Icon as={BsGithub} />

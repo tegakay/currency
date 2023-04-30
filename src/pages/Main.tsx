@@ -36,7 +36,7 @@ export const Main = () => {
   };
 
   return (
-    <div className="bgui">
+    <div className="bguia">
     <NavBar />
     <Container >
      
