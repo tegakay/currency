@@ -16,7 +16,8 @@ export const NavBar = () => {
   </BreadcrumbItem>
 
   <BreadcrumbItem>
-    <BreadcrumbLink href='/convert'>Convert</BreadcrumbLink>
+    {/* <BreadcrumbLink href='/convert'>Convert</BreadcrumbLink> */}
+    <Link href='/convert'>Convert</Link>
   </BreadcrumbItem>
 
   <BreadcrumbItem isCurrentPage>
